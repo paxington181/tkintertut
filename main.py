@@ -19,6 +19,18 @@ Radiobutton(m, text = "Blue portal", variable = portal, value = 2).pack(anchor=W
 Radiobutton(m, text = "Green portal", variable = portal_2, value = 3).pack(anchor = W)
 Radiobutton(m, text = "Yellow portal", variable = portal_2, value = 4).pack(anchor = W)
 
+Lb = Listbox(m)
+Lb.insert(0, "Index 0")
+Lb.insert(1, "Index 1")
+Lb.insert(2, "Index 2")
+Lb.insert(3, "Index 3")
+Lb.insert(4, "Index 4")
+Lb.insert(5, "Index 5")
+Lb.pack()
+
+#Everything underneath this is for grid, everything above is pack organizing.
+#They cannot be mixed in the same frame
+
 entry_window = Toplevel(m)
 entry_window.title("Grid organized instead of pack")
 
