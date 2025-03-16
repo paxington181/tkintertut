@@ -12,6 +12,13 @@ m_label.pack()
 button = tk.Button(m, text = "Huge success", width = 30, command = m.destroy)
 button.pack()
 
+portal = IntVar()
+portal_2 = IntVar()
+Radiobutton(m, text = "Red portal", variable = portal, value = 1).pack(anchor = W)
+Radiobutton(m, text = "Blue portal", variable = portal, value = 2).pack(anchor=W)
+Radiobutton(m, text = "Green portal", variable = portal_2, value = 3).pack(anchor = W)
+Radiobutton(m, text = "Yellow portal", variable = portal_2, value = 4).pack(anchor = W)
+
 entry_window = Toplevel(m)
 entry_window.title("Grid organized instead of pack")
 
