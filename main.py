@@ -7,6 +7,16 @@ m.title("This is a triumpth")
 m_label = Label(m, text = "I'm making a note here")
 m_label.pack()
 
+menu = Menu(m)
+m.config(menu = menu)
+filemenu = Menu(m)
+menu.add_cascade(label = "Files", menu = filemenu)
+filemenu.add_command(label = "New")
+filemenu.add_separator()
+filemenu.add_command(label = "Exit", command = m.quit)
+helpmenu = Menu(m)
+menu.add_cascade(label = "Help", menu = helpmenu)
+helpmenu.add_command(label = "You're on your own")
 
 
 button = tk.Button(m, text = "Huge success", width = 30, command = m.destroy)
