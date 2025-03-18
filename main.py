@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import *
+from tkinter import ttk
 
 m = tk.Tk()
 
@@ -76,7 +77,6 @@ Checkbutton(entry_window, text = "Pistachio", variable = check_butt_1).grid(row 
 check_butt_2 = IntVar()
 Checkbutton(entry_window, text = "Peanut", variable = check_butt_2).grid(row = 4,sticky = W)
 
-# https://www.geeksforgeeks.org/python-gui-tkinter/ - at Output lesson
-
+# https://www.geeksforgeeks.org/python-gui-tkinter/ - 
 
 m.mainloop()
