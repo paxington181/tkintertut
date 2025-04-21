@@ -81,4 +81,14 @@ Checkbutton(entry_window, text = "Peanut", variable = check_butt_2).grid(row = 4
 
 # https://www.geeksforgeeks.org/python-gui-tkinter/ - 
 
+
+#Canvas code after, third window
+
+canvas_window = Toplevel(m)
+canvas_window.title("Paint Jr")
+
+
+
+
+
 m.mainloop()
