@@ -33,13 +33,15 @@ Radiobutton(m, text = "Yellow portal", variable = portal_2, value = 4).pack(anch
 
 
 Lb = Listbox(m)
-Lb.insert(0, "Index 0")
-Lb.insert(1, "Index 1")
-Lb.insert(2, "Index 2")
-Lb.insert(3, "Index 3")
-Lb.insert(4, "Index 4")
-Lb.insert(5, "Index 5")
-Lb.pack()
+for i in range(0, 10):
+    Lb.insert(i, f"Index {i}, list item {i + 1}")
+#Lb.insert(0, "Index 0")
+#Lb.insert(1, "Index 1")
+#Lb.insert(2, "Index 2")
+#Lb.insert(3, "Index 3")
+#Lb.insert(4, "Index 4")
+#Lb.insert(5, "Index 5")
+Lb.pack(side = LEFT)
 
 
 scrollbar = Scrollbar(m)
