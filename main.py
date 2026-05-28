@@ -25,4 +25,9 @@ label2.grid(row = 1, column = 1, rowspan = 3, sticky = "nsew")
 label3.grid(row = 1, column = 0, columnspan = 3, sticky = "nsew", padx = 20, pady = 10)
 label4.grid(row = 3, column = 3, sticky = "se")
 
+button1.grid(row = 0, column = 3, sticky = "nsew")
+button2.grid(row = 2, column = 2, sticky = "nsew")
+
+entry.grid(row = 2, column = 3, rowspan = 2)
+
 main.mainloop()
